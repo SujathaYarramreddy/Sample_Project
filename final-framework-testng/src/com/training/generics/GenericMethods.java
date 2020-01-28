@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 /**
- * 
+ 
  
  * @see this class will help when you want to do custom business logic, since  in POM we dont do 
  * 			dynamic elements available, when you want to iterate the table/accordion etc 
