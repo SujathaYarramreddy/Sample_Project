@@ -77,7 +77,7 @@ public class Testcase_Med3_1 {
 		loginPOM_Med3.clickCartButton();
 		loginPOM_Med3.sendFirstname("Sujatha");
 		loginPOM_Med3.sendLastname("Siva");
-		loginPOM_Med3.sendEmail("sujatha353@in.ibm.com");
+		loginPOM_Med3.sendEmail("sujatha355@in.ibm.com");
 		loginPOM_Med3.sendTelephone("1234567890");
 		loginPOM_Med3.sendPassword("ramsuji@a12");
 		loginPOM_Med3.sendConfirmpwd("ramsuji@a12");

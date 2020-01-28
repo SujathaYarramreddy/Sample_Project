@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="43479" started-at="2019-07-15T14:31:16Z" finished-at="2019-07-15T14:32:00Z">
+  <suite name="Default suite" duration-ms="45950" started-at="2019-08-02T14:15:51Z" finished-at="2019-08-02T14:16:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22648" started-at="2019-07-15T14:31:16Z" finished-at="2019-07-15T14:31:39Z">
+    <test name="Default test" duration-ms="45950" started-at="2019-08-02T14:15:51Z" finished-at="2019-08-02T14:16:37Z">
       <class name="com.training.sanity.tests.Testcase_Med3_1">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Testcase_Med3_1@3c5a99da]" name="setUpBeforeClass" is-config="true" duration-ms="6700" started-at="2019-07-15T20:01:16Z" finished-at="2019-07-15T20:01:23Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Testcase_Med3_1@3c5a99da]" name="setUpBeforeClass" is-config="true" duration-ms="20781" started-at="2019-08-02T19:45:51Z" finished-at="2019-08-02T19:46:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.Testcase_Med3_1@3c5a99da]" name="validLoginTest" duration-ms="14933" started-at="2019-07-15T20:01:23Z" finished-at="2019-07-15T20:01:38Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.Testcase_Med3_1@3c5a99da]" name="validLoginTest" duration-ms="24149" started-at="2019-08-02T19:46:12Z" finished-at="2019-08-02T19:46:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Testcase_Med3_1@3c5a99da]" name="tearDown" is-config="true" duration-ms="1008" started-at="2019-07-15T20:01:38Z" finished-at="2019-07-15T20:01:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Testcase_Med3_1@3c5a99da]" name="tearDown" is-config="true" duration-ms="1000" started-at="2019-08-02T19:46:36Z" finished-at="2019-08-02T19:46:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.Testcase_Med3_1 -->
-    </test> <!-- Test -->
-    <test name="Test1" duration-ms="20769" started-at="2019-07-15T14:31:39Z" finished-at="2019-07-15T14:32:00Z">
-      <class name="com.training.sanity.tests.Testcase_Med4">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Testcase_Med4@1b0375b3]" name="setUpBeforeClass" is-config="true" duration-ms="4602" started-at="2019-07-15T20:01:39Z" finished-at="2019-07-15T20:01:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginAdmin()[pri:0, instance:com.training.sanity.tests.Testcase_Med4@1b0375b3]" name="validLoginAdmin" duration-ms="15151" started-at="2019-07-15T20:01:44Z" finished-at="2019-07-15T20:01:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginAdmin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Testcase_Med4@1b0375b3]" name="tearDown" is-config="true" duration-ms="1016" started-at="2019-07-15T20:01:59Z" finished-at="2019-07-15T20:02:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.Testcase_Med4 -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Sample test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

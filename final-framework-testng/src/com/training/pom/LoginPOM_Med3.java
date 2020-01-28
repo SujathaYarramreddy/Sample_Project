@@ -40,12 +40,15 @@ public class LoginPOM_Med3 {
 	}
 	
 	
-	@FindBy(id="input-option368")
+	@FindBy(name="option[368]")
 	private WebElement size;
 	
 	public void clickSize() {
-		Select sel = new Select(size);
-		sel.selectByVisibleText("38");
+		
+	if (!(size.isSelected())) {
+	    size.click();
+					
+		} 
 	}
 	
 	@FindBy(id="button-cart")

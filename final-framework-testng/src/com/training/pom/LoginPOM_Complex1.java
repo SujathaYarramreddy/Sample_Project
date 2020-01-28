@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class LoginPOM_Complex1 {
+public class LoginPOM_Complex1{
 	private WebDriver driver; 
 	
 	public LoginPOM_Complex1(WebDriver driver) {
@@ -30,78 +31,94 @@ public class LoginPOM_Complex1 {
 	
 	
 		
-		//--Changing the Products status
+		//--Cancel the order
+	
+	
+	@FindBy(id="sale")
+	private WebElement sales;
+	
+	public void clickOnSales() {
+		sales.click();
+	}
+	
+	@FindBy(linkText="Orders")
+	private WebElement ord;
+	
+	public void clickOnOrders() {
 		
-		@FindBy(linkText="Reports")
-		private WebElement report;
+		ord.click();
+	}
+	
 		
-		public void clickOnEdit() {
-			report.click();
-		}
+	@FindBy(xpath="//i[contains(@class,'fa-eye')]")
+	private WebElement view;
 		
-		@FindBy(id="button-customer")
-		private WebElement btncustomer;
-		
-		public void clickOnBtnCus() {
-			btncustomer.click();
-		}
-		
-		@FindBy(xpath="//i[contains(@class,'fa fa-minus-circle')]")
-		private WebElement removebtn;
-		
-		public void clickOnRemove() {
-			removebtn.click();
-		}
-		
-		@FindBy(id="input-product")
-		private WebElement chooseproduct;
-		
-		public void chooseProduct() {
-			Select sel = new Select(chooseproduct);
-			sel.selectByIndex(1);
-		}
-		@FindBy(id="input-quantity")
-		private WebElement choosequantity;
-		
-		public void chooseQuantity(String choosequantity) {
-			this.choosequantity.clear();
-			this.choosequantity.sendKeys(choosequantity);
+	public void clickOnViewicon() {
 			
+			view.click();
+	}
+		
+		@FindBy(id="input-order-status")
+		private WebElement orderstatus;
+		
+		public void selectOrderstatus() {
+			Select sel = new Select(orderstatus);
+			sel.selectByVisibleText("Complete");
 		}
 		
-		@FindBy(id="button-product-add")
-		private WebElement productadd;
+		@FindBy(id="button-history")
+		private WebElement btnhistory;
 		
-		public void clickOnProductadd() {
-			productadd.click();
+		public void clickOnAddhistory(){
+			btnhistory.click();
 		}
 		
-		@FindBy(id="button-cart")
-		private WebElement producbtn;
+		//--launching the Base URL to view for order History
 		
-		public void clickOnProductbtn() {
-			producbtn.click();
+		@FindBy(xpath="//i[contains(@class,'fa-user')]")
+		private WebElement user;
+		
+		public void clickUser() {
+			user.click();
 		}
 		
-		@FindBy(id="button-payment-address")
-		private WebElement producaddr;
+		@FindBy(linkText="Login")
+		private WebElement login;
 		
-		public void clickOnProductAddress() {
-			producaddr.click();
-		}
-		@FindBy(id="button-shipping-address")
-		private WebElement shipaddr;
-		
-		public void clickOnShipaddr() {
-			shipaddr.click();
+		public void clickOnlogin() {
+			login.click();	
 		}
 		
-		@FindBy(id="button-save")
-		private WebElement save;
+		@FindBy(id="input-email")
+		private WebElement inptemail;
 		
-		public void clickOnSave() {
-			save.click();
+		public void sendEmail(String inptemail) {
+			this.inptemail.clear();
+			this.inptemail.sendKeys(inptemail);
 		}
+		
+		@FindBy(id="input-password")
+		private WebElement inptpwd;
+		
+		public void sendPassword(String inptpwd) {
+			this.inptpwd.clear();
+			this.inptpwd.sendKeys(inptpwd);
+		}
+		
+		@FindBy(xpath="//input[contains(@value,'Login')]")
+		private WebElement userlogin;
+		
+		public void clickOnLogin() {
+			userlogin.click();
+		}
+		
+		@FindBy(linkText="View your order history")
+		private WebElement ordhistory;
+		
+		public void clickOnordhisotry() {
+			ordhistory.click();
+		}
+		
 		
 }
 
